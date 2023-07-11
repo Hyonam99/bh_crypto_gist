@@ -16,6 +16,7 @@ const News = ({simplified}) => {
     });
     const {data} = useGetCryptosQuery(100);
     const {Title, Text} = Typography;
+    const {Option} = Select
 
     if (isFetching) {
         return <Loader/>;
